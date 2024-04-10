@@ -1,0 +1,122 @@
+.Banner {
+    height: 400px;
+    position: relative;
+}
+
+
+.Banner .Media {
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover !important; /* Đảm bảo hình ảnh cover bề ngang */
+    background-repeat: no-repeat !important; /* Ngăn lặp lại hình ảnh */
+}
+
+.Banner .Media .MediaCaption {
+    text-align: right;
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    background-color: transparent;
+    color: black;
+    opacity: 1;
+    width: 93%;
+    font-size: 16px;
+    font-weight: 200;
+    transition: 300ms;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .Banner {
+        height: 300px;
+    }
+    .Banner .Media .MediaCaption {
+        padding: 10px;
+        width: 96%;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    
+}
+
+@media only screen and (max-width: 750px) {
+    .Banner {
+        height: 250px;
+        position: relative;
+    }
+    .Banner .Media .MediaCaption {
+        padding: 10px;
+        width: 95%;
+        font-size: 12px;
+        font-weight: 100;
+    }
+}
+/* 
+@media only screen and (max-width: 650px) {
+    .Banner {
+        height: 400px;
+        position: relative;
+    }
+     .Banner .Media .MediaCaption {
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 100;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .Banner {
+        height: 220px;
+        position: relative;
+    }
+     .Banner .Media .MediaCaption {
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 100;
+    }
+} */
+
+.Banner .Media .MediaCaption:hover {
+    opacity: 0.8;
+}
+
+.Banner .Media:hover {
+    filter: brightness(115%);
+}
+
+.Banner .BannerGrid {
+    height: 100%;
+    position: relative;
+}
+
+.Banner .Content {
+    color: white;
+    background-color: darkred;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 30px;
+    transition: 300ms;
+}
+
+.Banner .Content:hover,
+.Banner .Content:active {
+    background-color: darkred;
+}
+
+.Banner .Content .ViewButton {
+    margin-top: 40px;
+    color: white;
+    font-size: 16px;
+    border: 3px solid white;
+    text-transform: capitalize;
+    transition: 200ms;
+}

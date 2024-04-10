@@ -1,0 +1,70 @@
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.footer {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #d4d0d0;
+}
+
+
+.footer-row-1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-menu {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;;
+}
+
+.col-logo {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icon-button {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+    }
+    
+    .title {
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+    }
+    
+    .icon-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+    
+}

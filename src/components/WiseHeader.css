@@ -1,0 +1,131 @@
+@import url(bootstrap/dist/css/bootstrap.css);
+@import url('https://fonts.googleapis.com/css?family=Marcellus');
+
+*, :after, :before {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+.logo_wraper {
+    display: none;
+}
+
+.header-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .header-bar {
+        flex-direction: column;
+    }
+    .logo_wraper {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+.navbar-brand {
+    margin-right: unset !important;
+}
+.header-menu {
+    color: black !important;;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.image-header {
+    background:url('https://wisegentleman.vn/Slide.jpg');
+    /* width: 100%; */
+    height: 740px;
+    background-position: top left;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1300px) {
+    .image-header {
+        height: 540px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .image-header {
+        height: 340px;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .image-header {
+        height: 240px;
+    }
+    .logo {
+        width: 100px;
+        height: 33px;
+    }
+
+    .header-menu {
+        color: black !important;;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .image-header {
+        height: 240px;
+    }
+    .logo {
+        width: 100px;
+        height: 33px;
+    }
+    .header-menu {
+        color: black !important;;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+    }
+}
+
+
+
+.navbar-header {
+    position: absolute;
+}
+
+.navbar-nav li a {
+    color: white;
+}
+.row-empty {
+    height: 100px;
+}
+
+.row-heigh {
+    height: 396px;
+}
+
+/* .container-sm {
+    width: 93%;
+    justify-content: space-evenly
+} */
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row
+}
+
+.navbar, .navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
+    justify-content: space-evenly;
+}

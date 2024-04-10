@@ -1,0 +1,25 @@
+.product-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 950px) {
+    .product-title {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .product-title {
+        font-size: 22px;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .product-title {
+        font-size: 20px;
+    }
+    
+}
