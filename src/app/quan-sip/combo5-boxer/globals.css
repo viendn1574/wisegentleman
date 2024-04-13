@@ -117,23 +117,17 @@ h1 {
 }
 
 .product_image {
-  width: 550px;
+  width: 400px;
   height: auto;
 }
 
 .image_color {
-  width: 100px;
+  width: 80px;
   height: auto;
   margin-right: 10px;
   border-style: solid; /* Kiểu đường viền */
   border-width: 1px; /* Kích thước đường viền */
   border-color: rgb(129, 127, 127); /* Màu sắc đường viền */
-}
-.product_info {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -155,7 +149,11 @@ h1 {
     flex-direction: column;
     align-items: center
   }
-
+  .product_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 550px) {

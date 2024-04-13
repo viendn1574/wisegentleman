@@ -132,3 +132,7 @@ h1 {
 }
 
 
+.product {
+  display: flex;  
+  flex-wrap: wrap;
+}

@@ -105,12 +105,12 @@ function ResponsiveAppBar() {
 
           {/*KICH THUOC LON */}
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block', fontFamily: 'Times New Roman, Times, serif' }}
+                sx={{ my: 2, color: 'black', display: 'block', fontFamily: 'Times New Roman, Times, serif', marginLeft:'20px', marginRight:'20px', fontSize:'18px' }}
               >
                 {page}
               </Button>

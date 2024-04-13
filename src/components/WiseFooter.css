@@ -15,6 +15,7 @@
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-menu {
@@ -37,7 +38,6 @@
     margin-top: 5px;
 }
 
-
 @media only screen and (max-width: 450px) {
     .footer-logo {
         width: 80px;
@@ -48,7 +48,6 @@
     .title {
         font-size: 12px;
     }
-    
 }
 
 @media only screen and (max-width: 350px) {
@@ -66,5 +65,4 @@
     .title {
         font-size: 10px;
     }
-    
 }

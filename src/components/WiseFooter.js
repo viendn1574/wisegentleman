@@ -34,7 +34,7 @@ const WiseFooter = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <div className='d-flex container justify-content-center'>
+                    <div className='d-flex container justify-content-center' style={{marginBottom:'10px'}}>
                     <IconButton className='icon-button'>
                         <img src="https://wisegentleman.vn/facebook_icon.png" alt="Facebook Wise Gentleman" style={{ width: '100%', height: '100%' }}/>
                     </IconButton>

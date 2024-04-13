@@ -10,18 +10,18 @@ import DetailProduct from '@/components/DetailProduct';
 const items = [
   {
       Color: "Black",
-      Image: "https://wisegentleman.vn/products/tamgiac_nho/tamgiac_nho_den.jpg",
+      Image: "https://wisegentleman.vn/products/tamgiac_nho/combo_tamgiac_nho.jpg",
       Alt: "Quần sịp WISE TAM GIÁC đen"
   },
   {
-      Color: "Gray",
-      Image: "https://wisegentleman.vn/products/tamgiac_nho/tamgiac_nho_xam.jpg",
-      Alt: "Quần sịp WISE TAM GIÁC xám"
+    Color: "Black",
+    Image: "https://wisegentleman.vn/products/tamgiac_nho/combo_tamgiac_nho.jpg",
+    Alt: "Quần sịp WISE TAM GIÁC đen"
   },
   {
-      Color: "Blue",
-      Image: "https://wisegentleman.vn/products/tamgiac_nho/tamgiac_nho_xanh.jpg",
-      Alt: "Quần sịp WISE TAM GIÁC xanh"
+    Color: "Black",
+    Image: "https://wisegentleman.vn/products/tamgiac_nho/combo_tamgiac_nho.jpg",
+    Alt: "Quần sịp WISE TAM GIÁC đen"
   }
 ];
 

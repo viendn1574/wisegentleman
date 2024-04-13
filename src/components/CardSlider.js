@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react';
+import Box from '@mui/material/Box';
 import './CardSlider.css'
 
 import {
@@ -44,18 +45,18 @@ function useWindowSize() {
 const CardSlider = () => {
     const size = useWindowSize();
     return (
-        <div style={{ marginTop: "30px", color: "#494949" }}>
-            <Carousel
-                // className="Example"
-                // next={(now, previous) => console.log(`Next User Callback: Now displaying child ${now}. Previously displayed child ${previous}`)}
-                // prev={(now, previous) => console.log(`Prev User Callback: Now displaying child ${now}. Previously displayed child ${previous}`)}
-                // onChange={(now, previous) => console.log(`OnChange User Callback: Now displaying child ${now}. Previously displayed child ${previous}`)}
-                
-                // navButtonsProps={{style: {backgroundColor: 'black', borderRadius: 30}}}
-                // navButtonsWrapperProps={{style: {bottom: '0', top: 'unset', }}}
-                // indicatorContainerProps={{style: {margin: "30px"}}}
-                // NextIcon={<KeyboardArrowRightIcon />} 
-                indicators={false}
+        <Box sx={{ marginLeft: '40px', marginRight: '40px'}}>
+            <Carousel indicators={false}
+                swipe={true}
+                // navButtonsAlwaysVisible={false}
+                // navButtonsProps={{ 
+                //     style: {
+                //         backgroundColor: "transparent",
+                //         color:"black",
+                //         opacity: 0.5,
+                //         position: 'relative' 
+                //     }
+                // }} 
             >
                 {
                     items.map((item, index) => {
@@ -75,14 +76,9 @@ const CardSlider = () => {
                           }
                     })
                 }
-                {/* {
-                    items.map((item, index) => {
-                        return <Banner item={item} key={index} contentPosition={item.contentPosition} from={2} to={2} />
-                    })
-                } */}
             </Carousel>
             <br/>
-        </div>
+        </Box>
     );
 }
 
@@ -105,17 +101,14 @@ const Banner = (props) => {
 
         const media = (
             <Grid item xs={size.width < 650 ? 6 : 4} key={item.Name} onClick={() => handleCloseNavMenu(item.Url)}>
-
                 <CardMedia
                     className="Media"
                     image={item.Image}
                     title={item.Name}
-                >
-                    <Typography className="MediaCaption">
+                />
+                <Typography className="MediaCaption">
                         {item.Name}
-                    </Typography>
-                </CardMedia>
-
+                </Typography>
             </Grid>
         );
 
@@ -124,9 +117,6 @@ const Banner = (props) => {
 
 
     return (
-        // <Card className="Banner">
-
-        // </Card>
         <Grid container spacing={5} className="Banner BannerGrid">
             {items}
         </Grid>
@@ -143,34 +133,17 @@ const items = [
                 Url: "boxer"
             },
             {
-                Name: "TAM GIÁC",
+                Name: "TAM GIÁC LƯNG NHỎ",
                 Image: "/products/Tam_giac_nho_xam.jpg",
                 Url: "tam-giac-lung-nho"
             },
             {
-                Name: "TAM GIÁC",
+                Name: "TAM GIÁC LƯNG TO",
                 Image: "/products/Tam_giac_lon_xanh_nhat.jpg",
                 Url: "tam-giac-lung-lon"
             }
         ]
-    },
-    {
-        Name: "Combo",
-        Items: [
-            {
-                Name: "BOXER",
-                Image: "/products/Combo_boxer.jpg"
-            },
-            {
-                Name: "TAM GIÁC",
-                Image: "/products/Combo_tam_giac_nho.jpg"
-            },
-            {
-                Name: "TAM GIÁC",
-                Image: "/products/Combo_tam_giac_lon.jpg"
-            }
-        ]
-    },
+    }
 
 ];
 
